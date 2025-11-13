@@ -1,5 +1,5 @@
 streamlit
-# Add any other libraries your lab8.py uses, e.g.:
 pandas
 numpy
 matplotlib
+plotly
