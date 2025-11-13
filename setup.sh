@@ -1,14 +1,14 @@
 #!/bin/bash
+
+Create the .streamlit directory in the home folder
+
 mkdir -p ~/.streamlit/
 
-echo "
+Write the config content using a Here Document (cat << EOF)
 
-\[server\]\\n
-
-headless = true\\n
-
-enableCORS = false\\n
-
-port = \$PORT\\n
-
-" > \~/.streamlit/config.toml
+cat << EOF > ~/.streamlit/config.toml
+[server]
+headless = true
+enableCORS = false
+port = $PORT
+EOF
